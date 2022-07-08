@@ -1,0 +1,9 @@
+name: Build with Quality Check
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-mvn-package.yml
