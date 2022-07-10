@@ -10,5 +10,3 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/deploy-github.yml
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
