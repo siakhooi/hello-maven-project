@@ -7,3 +7,8 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/build-mvn-package.yml
+  deploy:
+    needs: build
+    uses: ./.github/workflows/deploy-github.yml
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

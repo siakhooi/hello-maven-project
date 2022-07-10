@@ -13,8 +13,12 @@ jobs:
         with:
           distribution: "corretto"
           java-version: "17"
-      - run: mvn -B package
+      - run: mvn --batch-mode --update-snapshots package
       - uses: actions/upload-artifact@v3
         with:
           name: target
           path: ./target/
+      - uses: actions/upload-artifact@v3
+        with:
+          name: jar
+          path: ./target/*.jar

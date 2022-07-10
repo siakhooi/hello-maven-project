@@ -5,6 +5,5 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=sing-app -DarchetypeArtif
 ```
 
 - update `.gitignore`
-
-- jacoco
-- setup jdk?
+- add build workflows
+- add deploy workflows
