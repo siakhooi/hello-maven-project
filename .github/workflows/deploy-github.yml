@@ -1,9 +1,9 @@
-name: Build with Maven
+name: Publish to Github Package Repository
 
 on: workflow_call
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
