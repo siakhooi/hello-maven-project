@@ -10,3 +10,6 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/deploy-github.yml
+  site:
+    needs: build
+    uses: ./.github/workflows/ghpages-mvn-site.yml

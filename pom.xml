@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>sing.app</groupId>
-  <artifactId>sing-app</artifactId>
+  <artifactId>hello-maven</artifactId>
   <version>1.0.0</version>
 
-  <name>sing-app</name>
+  <name>hello-maven</name>
   <url>https://github.com/siakhooi/hello-maven-project</url>
 
   <properties>
