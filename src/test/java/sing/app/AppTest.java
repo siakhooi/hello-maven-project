@@ -1,5 +1,6 @@
 package sing.app;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +13,13 @@ public class AppTest {
      */
     @Test
     public void shouldAnswerWithTrue() {
+        App m = new App();
+        assertNotNull(m);
+    }
+
+    @Test
+    void testMain() {
+        App.main(null);
         assertTrue(true);
     }
 }
