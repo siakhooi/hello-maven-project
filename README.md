@@ -8,8 +8,10 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
 - add build workflows
 - add deploy workflows
 - add ghpages + mvn site
+- add javadoc
+- javadoc jar
 
 ## todo
 
 - jacoco
-- javadoc
+- quality checks

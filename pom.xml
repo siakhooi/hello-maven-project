@@ -5,7 +5,7 @@
 
   <groupId>sing.app</groupId>
   <artifactId>hello-maven</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <name>hello-maven</name>
   <url>https://github.com/siakhooi/hello-maven-project</url>
@@ -51,6 +51,18 @@
                 </requireMavenVersion>
               </rules>
             </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
