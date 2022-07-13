@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build-mvn-package.yml
+    uses: ./.github/workflows/build-mvn-verify.yml
   deploy:
     needs: build
     uses: ./.github/workflows/deploy-mvn-deploy-gpr.yml
