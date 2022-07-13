@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"sing.app","c":"AppTest","l":"AppTest()","u":"%3Cinit%3E()"},{"p":"sing.app","c":"AppTest","l":"shouldAnswerWithTrue()"}];updateSearchResults();
+memberSearchIndex = [{"p":"sing.app","c":"AppleTest","l":"AppleTest()","u":"%3Cinit%3E()"},{"p":"sing.app","c":"AppTest","l":"AppTest()","u":"%3Cinit%3E()"},{"p":"sing.app","c":"AppTest","l":"shouldAnswerWithTrue()"}];updateSearchResults();
