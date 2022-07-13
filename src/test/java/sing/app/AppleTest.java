@@ -8,6 +8,11 @@ public class AppleTest {
   void testSize() {
     Apple a = new Apple();
     assertEquals(a.size(3), 8);
+  }
 
+  @Test
+  void testSize2() {
+    Apple a = new Apple();
+    assertEquals(a.size(4), 10);
   }
 }

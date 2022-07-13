@@ -7,9 +7,8 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/build-mvn-verify.yml
-  deploy:
+  coveralls:
     needs: build
-    uses: ./.github/workflows/deploy-mvn-deploy-gpr.yml
-  site:
-    needs: build
-    uses: ./.github/workflows/ghpages-mvn-site.yml
+    uses: ./.github/workflows/quality-coveralls.yml
+    secrets:
+      COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}

@@ -1,0 +1,20 @@
+name: Coveralls
+
+on:
+  workflow_call:
+    secrets:
+      COVERALLS_REPO_TOKEN:
+        required: true
+
+jobs:
+  Coveralls:
+    name: Coveralls
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: target
+          path: ./target/
+      - run: ls -R
+      - run: mvn -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN}} coveralls:report

@@ -1,0 +1,14 @@
+name: Build with Quality Check
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-mvn-verify.yml
+  deploy:
+    needs: build
+    uses: ./.github/workflows/deploy-mvn-deploy-gpr.yml
+  site:
+    needs: build
+    uses: ./.github/workflows/ghpages-mvn-site.yml
