@@ -3,7 +3,7 @@ name: Build with Maven
 on: workflow_call
 
 jobs:
-  build:
+  mvn-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

@@ -3,7 +3,7 @@ name: Deploy mvn site to Github Pages
 on: workflow_call
 
 jobs:
-  deploy:
+  mvn-site:
     runs-on: ubuntu-latest
     permissions:
       contents: write
