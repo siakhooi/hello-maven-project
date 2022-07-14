@@ -10,6 +10,9 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
 - add ghpages + mvn site
 - add javadoc + javadoc jar
 - add jacoco build + report
+- quality
+  - coveralls
+  - sonarcloud
 
 ## url
 
