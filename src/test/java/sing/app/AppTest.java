@@ -12,10 +12,14 @@ public class AppTest {
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    void shouldAnswerWithTrue() {
         App m = new App();
         assertNotNull(m);
     }
+
+    /**
+     * Test CLI
+     */
 
     @Test
     void testMain() {

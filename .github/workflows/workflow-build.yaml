@@ -12,3 +12,8 @@ jobs:
     uses: ./.github/workflows/quality-coveralls.yml
     secrets:
       COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+  sonarcloud:
+    needs: build
+    uses: ./.github/workflows/quality-sonarcloud.yml
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
