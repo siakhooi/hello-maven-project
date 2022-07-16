@@ -15,4 +15,10 @@ public class AppleTest {
     Apple a = new Apple();
     assertEquals(a.size(4), 10);
   }
+
+  @Test
+  void testSize3() {
+    Apple a = new Apple();
+    assertEquals(a.size(5), 12);
+  }
 }

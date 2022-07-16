@@ -10,15 +10,25 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
 - add ghpages + mvn site
 - add javadoc + javadoc jar
 - add jacoco build + report
-- quality
+- quality checks
   - coveralls
   - sonarcloud
   - codacy
   - codecov
+  - codeclimate
+  - codefactor.io
+  - snyk.io
 
 ## url
 
 - <https://siakhooi.github.io/hello-maven-project/>
+- <https://coveralls.io/github/siakhooi/hello-maven-project>
+- <https://sonarcloud.io/project/overview?id=siakhooi_hello-maven-project>
+- <https://app.codecov.io/gh/siakhooi/hello-maven-project>
+- <https://app.codacy.com/gh/siakhooi/hello-maven-project/>
+- <https://codeclimate.com/github/siakhooi/hello-maven-project>
+- <https://www.codefactor.io/repository/github/siakhooi/hello-maven-project>
+- <https://app.snyk.io/org/siakhooi/projects>
 
 ## todo
 
