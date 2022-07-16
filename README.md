@@ -18,6 +18,7 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
   - codeclimate
   - codefactor.io
   - snyk.io
+  - Coverity
 
 ## url
 
@@ -29,7 +30,4 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
 - <https://codeclimate.com/github/siakhooi/hello-maven-project>
 - <https://www.codefactor.io/repository/github/siakhooi/hello-maven-project>
 - <https://app.snyk.io/org/siakhooi/projects>
-
-## todo
-
-- quality checks
+- <https://scan.coverity.com/projects/siakhooi-hello-maven-project?tab=overview>
