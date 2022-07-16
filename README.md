@@ -13,6 +13,8 @@ mvn archetype:generate -DgroupId=sing.app -DartifactId=hello-maven -DarchetypeAr
 - quality
   - coveralls
   - sonarcloud
+  - codacy
+  - codecov
 
 ## url
 

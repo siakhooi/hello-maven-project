@@ -17,3 +17,11 @@ jobs:
     uses: ./.github/workflows/quality-sonarcloud.yml
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  codecov:
+    needs: build
+    uses: ./.github/workflows/quality-codecov.yml
+  codacy:
+    needs: build
+    uses: ./.github/workflows/quality-codacy.yml
+    secrets:
+      CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}

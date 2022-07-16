@@ -1,0 +1,20 @@
+name: Codecov
+
+on: workflow_call
+
+jobs:
+  Codecov:
+    name: Codecov
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: target
+          path: ./target/
+      - run: ls -R
+      - name: Upload coverage reports to Codecov with GitHub Action
+        uses: codecov/codecov-action@v3
+        with:
+          directory: ./target/site/jacoco
+          files: jacoco.xml

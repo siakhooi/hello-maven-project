@@ -1,0 +1,24 @@
+name: Codacy
+
+on:
+  workflow_call:
+    secrets:
+      CODACY_PROJECT_TOKEN:
+        required: true
+
+jobs:
+  Codacy:
+    name: Codacy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: target
+          path: ./target/
+      - run: ls -R
+      - name: Upload to Codacy.com
+        uses: codacy/codacy-coverage-reporter-action@v1
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: ./target/site/jacoco/jacoco.xml
