@@ -24,7 +24,7 @@ jobs:
         uses: vapier/coverity-scan-action@v1
         with:
           build_language: "java"
-          command: "mvn --batch-mode verify"
+          command: "mvn package"
           email: ${{ secrets.COVERITY_SCAN_EMAIL }}
           token: ${{ secrets.COVERITY_SCAN_TOKEN }}
       - name: Upload Artifacts
