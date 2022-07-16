@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: "corretto"
-          java-version: "17"
+          java-version: "16"
       - name: Coverity Scan
         uses: vapier/coverity-scan-action@v1
         with:
