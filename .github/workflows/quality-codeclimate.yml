@@ -23,3 +23,4 @@ jobs:
           coverageLocations: ${{github.workspace}}/target/site/jacoco/jacoco.xml:jacoco
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CODE_CLIMATE_REPORT_TOKEN }}
+          JACOCO_SOURCE_PATH: "${{github.workspace}}/src/main/java"
